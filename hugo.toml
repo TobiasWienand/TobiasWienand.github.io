@@ -1,0 +1,14 @@
+baseURL = 'https://TobiasWienand.github.io/'
+languageCode = 'en'
+title = 'Tobias Wienand'
+
+[params]
+  subtitle = "Security Researcher"
+  description = "Security researcher focused on browser security."
+  email = "tobias.wienand@rub.de"
+  github = "github.com/TobiasWienand"
+  linkedin = "https://www.linkedin.com/in/tobias-wienand-071576237/"
+  location = "Germany"
+
+[markup.goldmark.renderer]
+  unsafe = true

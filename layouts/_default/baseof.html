@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ .Site.Params.description }}">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<canvas id="flow-canvas"></canvas>
+<div class="content">
+    {{ block "main" . }}{{ end }}
+
+    <div class="footer">
+        <p>// end of transmission //</p>
+    </div>
+</div>
+<script src="/js/flow.js"></script>
+</body>
+</html>
