@@ -5,12 +5,14 @@
         <div class="avatar"><img src="/img/tobias.jpg" alt="Tobias Wienand"></div>
         <h1>TOBIAS WIENAND</h1>
         <div class="subtitle">{{ .Site.Params.subtitle }}</div>
+        <div class="header-email"><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></div>
+        <div class="header-email header-linkedin"><a href="{{ .Site.Params.linkedin }}">LinkedIn</a></div>
     </div>
 
     <div class="section">
         <h2>About</h2>
         <p>
-            Hi there! I am a PhD student at Ruhr University Bochum, working in the Chair for Automated Security Analysis led by Prof. Dr. Flavio Toffalini. My research interests are in system security with a strong emphasis on browser security. I mainly use fuzzing to search for memory corruption and logic flaws.
+            Hi there! I am a PhD student at Ruhr University Bochum, working in the Chair for Automated Security Analysis led by <a href="https://flaviotoffalini.info/">Prof. Dr. Flavio Toffalini</a>. My research interests are in system security with a strong emphasis on browser security. I mainly use fuzzing to search for memory corruption and logic flaws.
         </p>
     </div>
 
@@ -34,17 +36,4 @@
         </ul>
     </div>
 
-    <div class="section">
-        <h2>Contact</h2>
-        <div class="contact-grid">
-            <div class="contact-item">
-                <div class="label">Email</div>
-                <div class="value">{{ .Site.Params.email }}</div>
-            </div>
-<div class="contact-item">
-                <div class="label">LinkedIn</div>
-                <div class="value"><a href="{{ .Site.Params.linkedin }}">LinkedIn</a></div>
-            </div>
-        </div>
-    </div>
 {{ end }}

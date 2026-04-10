@@ -103,6 +103,29 @@ body {
     font-weight: 400;
 }
 
+.header-email {
+    font-size: 0.85em;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+.header-email a {
+    color: #999;
+    border-bottom: none;
+}
+
+.header-email a:hover {
+    color: #00cc88;
+}
+
+.header-linkedin a {
+    color: #0a66c2;
+}
+
+.header-linkedin a:hover {
+    color: #3b8dd6;
+}
+
 /* Sections */
 .section {
     margin-bottom: 44px;
